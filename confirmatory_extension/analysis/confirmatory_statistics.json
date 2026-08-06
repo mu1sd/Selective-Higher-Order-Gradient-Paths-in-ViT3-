@@ -1,0 +1,193 @@
+{
+  "caveats": [
+    "The two added seeds are post-hoc confirmatory and are not retroactive preregistration.",
+    "All three methods were extended symmetrically; no method-specific favorable-seed selection occurred.",
+    "The strict evidence gate concerns completeness and contract validity, not favorable outcomes.",
+    "Combined n=5 analyses must retain the original-n3 versus confirmatory-n2 cohort labels."
+  ],
+  "descriptives": {
+    "combined_n5": {
+      "FFFF": {
+        "max": 48.01083074810267,
+        "mean": 46.1451663894112,
+        "min": 44.72988086724455,
+        "n": 5,
+        "sample_sd": 1.1962986492156458
+      },
+      "GSHPS_AUTO": {
+        "max": 47.767733534632846,
+        "mean": 45.27987552189988,
+        "min": 43.94415080661392,
+        "n": 5,
+        "sample_sd": 1.5700973448802282
+      },
+      "RAND_PATH": {
+        "max": 47.36853707493017,
+        "mean": 45.506113597673895,
+        "min": 44.48685295871117,
+        "n": 5,
+        "sample_sd": 1.1205001486900408
+      }
+    },
+    "confirmatory_n2": {
+      "FFFF": {
+        "max": 48.01083074810267,
+        "mean": 46.37035580767361,
+        "min": 44.72988086724455,
+        "n": 2,
+        "sample_sd": 2.3199819094879697
+      },
+      "GSHPS_AUTO": {
+        "max": 45.596501741855306,
+        "mean": 45.36856077545478,
+        "min": 45.140619809054265,
+        "n": 2,
+        "sample_sd": 0.3223572061040464
+      },
+      "RAND_PATH": {
+        "max": 47.36853707493017,
+        "mean": 46.36367630404548,
+        "min": 45.35881553316079,
+        "n": 2,
+        "sample_sd": 1.4210877304818121
+      }
+    },
+    "original_n3": {
+      "FFFF": {
+        "max": 46.171775010080744,
+        "mean": 45.99504011056959,
+        "min": 45.65535743240532,
+        "n": 3,
+        "sample_sd": 0.29425458799996357
+      },
+      "GSHPS_AUTO": {
+        "max": 47.767733534632846,
+        "mean": 45.220752019529954,
+        "min": 43.94415080661392,
+        "n": 3,
+        "sample_sd": 2.2057528881630084
+      },
+      "RAND_PATH": {
+        "max": 45.512270368044966,
+        "mean": 44.93440512675951,
+        "min": 44.48685295871117,
+        "n": 3,
+        "sample_sd": 0.5249822269692428
+      }
+    }
+  },
+  "generated_at": "2026-07-23T08:22:23.818554+00:00",
+  "instability": {
+    "combined_n5_sd": {
+      "FFFF": 1.1962986492156458,
+      "GSHPS_AUTO": 1.5700973448802282,
+      "RAND_PATH": 1.1205001486900408
+    },
+    "gshps_to_ffff_sd_ratio": 1.3124626914104298,
+    "gshps_to_rand_sd_ratio": 1.4012468866834196,
+    "interpretation": "descriptive only, as frozen before results"
+  },
+  "paired": {
+    "GSHPS_AUTO_minus_FFFF": {
+      "combined_n5": {
+        "deltas": [
+          -2.2276242034668243,
+          -2.2076161718796214,
+          2.112376102227529,
+          -2.8702109390484054,
+          0.8666208746107529
+        ],
+        "exact_two_sided_sign_flip_p": 0.4375,
+        "mean_delta": -0.8652908675113139,
+        "sample_sd": 2.210402265393645
+      },
+      "confirmatory_n2": {
+        "deltas": [
+          -2.8702109390484054,
+          0.8666208746107529
+        ],
+        "exact_two_sided_sign_flip_p": 1.0,
+        "mean_delta": -1.0017950322188263,
+        "sample_sd": 2.642339115592016
+      },
+      "original_n3": {
+        "deltas": [
+          -2.2276242034668243,
+          -2.2076161718796214,
+          2.112376102227529
+        ],
+        "exact_two_sided_sign_flip_p": 0.5,
+        "mean_delta": -0.7742880910396389,
+        "sample_sd": 2.4999445401548592
+      }
+    },
+    "GSHPS_AUTO_minus_RAND_PATH": {
+      "combined_n5": {
+        "deltas": [
+          -1.5681195614310468,
+          -0.5364812413680795,
+          2.96364148111045,
+          -2.2279172658759023,
+          0.2376862086945195
+        ],
+        "exact_two_sided_sign_flip_p": 0.875,
+        "mean_delta": -0.2262380757740118,
+        "sample_sd": 2.0183021114654127
+      },
+      "confirmatory_n2": {
+        "deltas": [
+          -2.2279172658759023,
+          0.2376862086945195
+        ],
+        "exact_two_sided_sign_flip_p": 1.0,
+        "mean_delta": -0.9951155285906914,
+        "sample_sd": 1.7434449365858586
+      },
+      "original_n3": {
+        "deltas": [
+          -1.5681195614310468,
+          -0.5364812413680795,
+          2.96364148111045
+        ],
+        "exact_two_sided_sign_flip_p": 1.0,
+        "mean_delta": 0.2863468927704413,
+        "sample_sd": 2.3752892751034786
+      }
+    },
+    "RAND_PATH_minus_FFFF": {
+      "combined_n5": {
+        "deltas": [
+          -0.6595046420357775,
+          -1.671134930511542,
+          -0.8512653788829212,
+          -0.6422936731725031,
+          0.6289346659162334
+        ],
+        "exact_two_sided_sign_flip_p": 0.125,
+        "mean_delta": -0.6390527917373021,
+        "sample_sd": 0.8243859377712042
+      },
+      "confirmatory_n2": {
+        "deltas": [
+          -0.6422936731725031,
+          0.6289346659162334
+        ],
+        "exact_two_sided_sign_flip_p": 1.0,
+        "mean_delta": -0.006679503628134853,
+        "sample_sd": 0.8988941790061574
+      },
+      "original_n3": {
+        "deltas": [
+          -0.6595046420357775,
+          -1.671134930511542,
+          -0.8512653788829212
+        ],
+        "exact_two_sided_sign_flip_p": 0.25,
+        "mean_delta": -1.0606349838100801,
+        "sample_sd": 0.5373320051336097
+      }
+    }
+  },
+  "status": "PASS",
+  "study_role": "post_hoc_confirmatory_extension"
+}

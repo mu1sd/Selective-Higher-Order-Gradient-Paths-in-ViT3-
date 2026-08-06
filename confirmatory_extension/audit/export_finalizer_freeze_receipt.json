@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-07-23T02:24:30.448810+00:00",
+  "datasets_included": false,
+  "finalizer_sha256": "0e7fcaaececbae93779559151af919fb145e261d2a2f59edbac2ed78acfe883b",
+  "frozen_before_confirmatory_completion": true,
+  "path_sha256": "b568a7a1ab8b6ce3f0cf212a2e7c4e699c9f790613b1e3f1d055eeea6f8f892d",
+  "selected_checkpoint_count": 14,
+  "selection_result_independent": true,
+  "selection_rule": "all six confirmatory finals; seed11 FFFF/GSHPS-Auto/RAND-PATH-K representatives on ImageNet-100 and LoveDA; both source initialization checkpoints",
+  "service_sha256": "d73d709b03656ded86348a31ffa88f908ce4cf4b1a0451b410ba4d34f9414ca6",
+  "status": "PASS"
+}

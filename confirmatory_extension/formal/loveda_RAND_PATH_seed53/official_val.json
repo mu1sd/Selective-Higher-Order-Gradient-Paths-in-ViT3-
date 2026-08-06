@@ -1,0 +1,152 @@
+{
+  "checkpoint": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_RAND_PATH_seed53/final.pth",
+  "checkpoint_sha256": "39ca20121964155c5829a2059a2fe7a16ee47fd203e8148f45a6a1a3bc4f7169",
+  "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed53_eval.json",
+  "metrics": {
+    "confusion_matrix_true_by_pred": [
+      [
+        465488804,
+        29605811,
+        4516228,
+        23857139,
+        40256997,
+        12069543,
+        39456160
+      ],
+      [
+        27242020,
+        93469819,
+        134614,
+        146802,
+        37907,
+        548394,
+        1226235
+      ],
+      [
+        32590775,
+        1124909,
+        41711964,
+        328364,
+        759681,
+        995113,
+        2079694
+      ],
+      [
+        27619225,
+        295124,
+        306595,
+        158270806,
+        3555100,
+        2952796,
+        6568170
+      ],
+      [
+        33951363,
+        187402,
+        142625,
+        1522670,
+        22287359,
+        415738,
+        15875976
+      ],
+      [
+        49258674,
+        321785,
+        322779,
+        1331600,
+        9626361,
+        51540172,
+        13214276
+      ],
+      [
+        124465004,
+        5642995,
+        1257478,
+        7096980,
+        9063358,
+        15756731,
+        323800156
+      ]
+    ],
+    "domain_miou": {
+      "Rural": 39.42764262661779,
+      "Urban": 52.30211470925528
+    },
+    "intersection": [
+      465488804.0,
+      93469819.0,
+      41711964.0,
+      158270806.0,
+      22287359.0,
+      51540172.0,
+      323800156.0
+    ],
+    "miou": 47.36853707493017,
+    "per_class_iou": [
+      51.131391071365414,
+      58.42454615268993,
+      48.350026675879825,
+      67.68008471500472,
+      16.187498782071398,
+      32.547447091977396,
+      57.258765035522444
+    ],
+    "present_class_count": 7,
+    "qualitative_private_manifest": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_RAND_PATH_seed53/qualitative_private/manifest.json",
+    "union": [
+      910377743.0,
+      159983817.0,
+      86270819.0,
+      233851371.0,
+      137682537.0,
+      158353962.0,
+      565503213.0
+    ]
+  },
+  "mode": "RAND_PATH",
+  "official_val_index_sha256": "9473cc32c5fb01679c6c02c1bdf31e185c97d24a8c1cfe600f4a2e1ddbee89bc",
+  "official_val_post_frozen": true,
+  "seed": 53,
+  "source": {
+    "checkpoint": "/data/Vit_Cube/payload/vittt_t_upernet.pth",
+    "checkpoint_sha256": "92c44883341c6d6df75c3009fbc77d79729501fb5a002f86c71744cbc8aef5d7",
+    "compatible_key_count": 472,
+    "ignored_checkpoint_keys": 21,
+    "missing_head_or_rope_keys": [
+      "backbone.layers.0.blocks.0.attn.rope.rotations",
+      "backbone.layers.1.blocks.0.attn.rope.rotations",
+      "backbone.layers.1.blocks.1.attn.rope.rotations",
+      "backbone.layers.1.blocks.2.attn.rope.rotations",
+      "backbone.layers.2.blocks.0.attn.rope.rotations",
+      "backbone.layers.2.blocks.1.attn.rope.rotations",
+      "backbone.layers.2.blocks.2.attn.rope.rotations",
+      "backbone.layers.2.blocks.3.attn.rope.rotations",
+      "backbone.layers.2.blocks.4.attn.rope.rotations",
+      "backbone.layers.2.blocks.5.attn.rope.rotations",
+      "backbone.layers.2.blocks.6.attn.rope.rotations",
+      "backbone.layers.2.blocks.7.attn.rope.rotations",
+      "backbone.layers.2.blocks.8.attn.rope.rotations",
+      "backbone.layers.3.blocks.0.attn.rope.rotations",
+      "backbone.layers.3.blocks.1.attn.rope.rotations",
+      "backbone.layers.3.blocks.2.attn.rope.rotations",
+      "backbone.layers.3.blocks.3.attn.rope.rotations",
+      "decode_head.conv_seg.weight",
+      "decode_head.conv_seg.bias",
+      "auxiliary_head.conv_seg.weight",
+      "auxiliary_head.conv_seg.bias"
+    ],
+    "mmseg_commit": "c685fe6767c4cadf6b051983ca6208f1b9d1ccb8",
+    "mmseg_root": "/data/Vit_Cube/workspace/releases/20260723_loveda_confirmatory_r1/vit3_loveda_confirmatory_release/private_mmseg",
+    "official_commit": "e3477587d099e6b9e83e9e7c80b1b999e0989a20",
+    "path_mask": {
+      "mask_hash": "88d5105bef73d3f24d0336df24bcb4642cd7e247599ecf3f37edf976b9af9bee",
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/protocol/loveda_rand_path_seed53_mask.json",
+      "sha256": "314a18f017eca885c59c53551ef373cb3e4720826887d612f874441a9a2186f8"
+    },
+    "runtime_initial_mode": "PATH",
+    "ttt_block_count": 17,
+    "upstream_scale_state_fix": "forward mutation removed; fixed at upstream long-run value 1/3",
+    "use_checkpoint": false
+  },
+  "status": "PASS"
+}

@@ -1,0 +1,107 @@
+{
+  "entries": [
+    {
+      "block_index": 0,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 1,
+      "dwc": false,
+      "swiglu": true
+    },
+    {
+      "block_index": 2,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 3,
+      "dwc": true,
+      "swiglu": false
+    },
+    {
+      "block_index": 4,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 5,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 6,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 7,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 8,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 9,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 10,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 11,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 12,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 13,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 14,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 15,
+      "dwc": true,
+      "swiglu": true
+    },
+    {
+      "block_index": 16,
+      "dwc": true,
+      "swiglu": true
+    }
+  ],
+  "entries_sha256": "e6f669c31c8789d537036be59c63cf9627079fead8c4f8fbe619775e581d53bb",
+  "kept_paths": 32,
+  "rule": {
+    "allowed_boundaries": [
+      0.0,
+      1.0
+    ],
+    "cost_normalization": "C/mean(C) within each seed\u00d7batch unit",
+    "coverage": 0.9,
+    "direction_normalization": "D/sum(D) within each seed\u00d7batch unit",
+    "importance": "0.5*D_normalized+0.5*N_normalized",
+    "magnitude_normalization": "N/sum(N) within each seed\u00d7batch unit",
+    "name": "GSHPS-Auto",
+    "ranking": "importance/(cost_normalized+1e-12)"
+  },
+  "schema": 1,
+  "task": "loveda",
+  "total_paths": 34
+}

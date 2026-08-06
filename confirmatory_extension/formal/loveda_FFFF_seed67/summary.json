@@ -1,0 +1,190 @@
+{
+  "audit": {
+    "amp_skips": 0,
+    "attempted_steps": 5000,
+    "data_order_sha256": [
+      "66f4dc3be8ef939708e42f881d6207133a8c8a2976f9049a811024c26923e06f",
+      "2b79eaf10fb5a42594e80da41f62df0664ce86e67ffd7edccc8ee7844eb47737",
+      "759e51488894a468e8a18c9bdd3326120c30a4611f599e4c9ead11098fcd9527",
+      "b303181cd883db0b8d48466e00c50acf471928c8f496396144e525aa4f0e7ec6",
+      "44f5ae2bc45c5c1ef3d49e462bba0396843cb4aaae3a2bd22f6fc06b923d108e"
+    ],
+    "effective_updates": 5000,
+    "mode_update_counts": {},
+    "nan_inf": 0,
+    "scheduler_steps": 5000,
+    "zero_updates": 0
+  },
+  "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed67.json",
+  "config_sha256": "16ef9bdff021c39c3e4a42902ade60ebcca056e5f908233f575bab4a29563b59",
+  "dataset_index_hashes": {
+    "selection": "b97e6e3903865d3b65c560170103d1f618a07aeb3fc99f8342bb085c9ebbe4a8",
+    "train": "4020b5d2d37a05e70be096b2df6719671359d54af3f334552ae33c5fbbeae57b"
+  },
+  "dataset_type": "loveda",
+  "environment": {
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "fixed_loss_scale": 1.0,
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "precision": "bf16",
+    "python": "3.11.7 (main, Dec 15 2023, 18:12:31) [GCC 11.2.0]",
+    "torch": "2.1.0+cu121"
+  },
+  "final_checkpoint": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_FFFF_seed67/final.pth",
+  "final_checkpoint_sha256": "0262288dd4f4fed5dd76d7e4e30b5767576053f78c6eb78ec467f70fad93919e",
+  "latest_selection": {
+    "confusion_matrix_true_by_pred": [
+      [
+        61083639,
+        4008510,
+        2036916,
+        1211441,
+        7194261,
+        5080211,
+        9585434
+      ],
+      [
+        8791429,
+        17163443,
+        267506,
+        10496,
+        532708,
+        118405,
+        153102
+      ],
+      [
+        3818335,
+        96571,
+        8946068,
+        21954,
+        100171,
+        309987,
+        206550
+      ],
+      [
+        1301585,
+        6642,
+        6293,
+        14978913,
+        137288,
+        212041,
+        1451642
+      ],
+      [
+        4165196,
+        33476,
+        9663,
+        250161,
+        7820184,
+        850676,
+        592053
+      ],
+      [
+        6812875,
+        246038,
+        93472,
+        165529,
+        558136,
+        36080484,
+        2056199
+      ],
+      [
+        3276361,
+        42524,
+        43942,
+        408449,
+        202182,
+        1046544,
+        41448944
+      ]
+    ],
+    "domain_miou": {
+      "Rural": 58.29856029010065,
+      "Urban": 55.18521788287062
+    },
+    "intersection": [
+      61083639.0,
+      17163443.0,
+      8946068.0,
+      14978913.0,
+      7820184.0,
+      36080484.0,
+      41448944.0
+    ],
+    "miou": 58.158155442352225,
+    "per_class_iou": [
+      51.60564638587304,
+      54.537589547152365,
+      56.062092211852686,
+      74.29119420800087,
+      34.83974872311093,
+      67.2759320579631,
+      68.49488496251259
+    ],
+    "present_class_count": 7,
+    "union": [
+      118366193.0,
+      31470850.0,
+      15957428.0,
+      20162434.0,
+      22446155.0,
+      53630597.0,
+      60513926.0
+    ]
+  },
+  "mode": "FFFF",
+  "optimizer_group_sha256": "23dc97569978a051eefa2dc8d68a3fe88318ce95b00c427c8cfd191a21c1ae21",
+  "rand_schedule": null,
+  "scheduler_context": "post_hoc_confirmatory_serial",
+  "seed": 67,
+  "source": {
+    "checkpoint": "/data/Vit_Cube/payload/vittt_t_upernet.pth",
+    "checkpoint_sha256": "92c44883341c6d6df75c3009fbc77d79729501fb5a002f86c71744cbc8aef5d7",
+    "compatible_key_count": 472,
+    "ignored_checkpoint_keys": 21,
+    "missing_head_or_rope_keys": [
+      "backbone.layers.0.blocks.0.attn.rope.rotations",
+      "backbone.layers.1.blocks.0.attn.rope.rotations",
+      "backbone.layers.1.blocks.1.attn.rope.rotations",
+      "backbone.layers.1.blocks.2.attn.rope.rotations",
+      "backbone.layers.2.blocks.0.attn.rope.rotations",
+      "backbone.layers.2.blocks.1.attn.rope.rotations",
+      "backbone.layers.2.blocks.2.attn.rope.rotations",
+      "backbone.layers.2.blocks.3.attn.rope.rotations",
+      "backbone.layers.2.blocks.4.attn.rope.rotations",
+      "backbone.layers.2.blocks.5.attn.rope.rotations",
+      "backbone.layers.2.blocks.6.attn.rope.rotations",
+      "backbone.layers.2.blocks.7.attn.rope.rotations",
+      "backbone.layers.2.blocks.8.attn.rope.rotations",
+      "backbone.layers.3.blocks.0.attn.rope.rotations",
+      "backbone.layers.3.blocks.1.attn.rope.rotations",
+      "backbone.layers.3.blocks.2.attn.rope.rotations",
+      "backbone.layers.3.blocks.3.attn.rope.rotations",
+      "decode_head.conv_seg.weight",
+      "decode_head.conv_seg.bias",
+      "auxiliary_head.conv_seg.weight",
+      "auxiliary_head.conv_seg.bias"
+    ],
+    "mmseg_commit": "c685fe6767c4cadf6b051983ca6208f1b9d1ccb8",
+    "mmseg_root": "/data/Vit_Cube/workspace/releases/20260723_loveda_confirmatory_r1/vit3_loveda_confirmatory_release/private_mmseg",
+    "official_commit": "e3477587d099e6b9e83e9e7c80b1b999e0989a20",
+    "path_mask": null,
+    "runtime_initial_mode": "FFFF",
+    "ttt_block_count": 17,
+    "upstream_scale_state_fix": "forward mutation removed; fixed at upstream long-run value 1/3",
+    "use_checkpoint": false
+  },
+  "status": "PASS",
+  "task": "LoveDA semantic-segmentation external validation",
+  "timing": {
+    "dataloader_p50_seconds": 0.0002883054985431954,
+    "dataloader_p95_seconds": 0.0006967450026422739,
+    "e2e_p50_seconds": 0.6339575175006757,
+    "e2e_p95_seconds": 0.7245369980082614,
+    "gpu_step_p50_seconds": 0.6276678161621094,
+    "gpu_step_p95_seconds": 0.7148568725585938,
+    "peak_allocated_mb": 2908.73193359375,
+    "peak_reserved_mb": 4416.0
+  }
+}

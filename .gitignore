@@ -1,0 +1,33 @@
+# Python and test cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# Git and editor metadata from vendored components
+.git/
+.github/
+.vscode/
+.idea/
+
+# Experiment artifacts and credentials
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.tar
+*.tar.gz
+*.zip
+*.log
+*password*
+*secret*
+*credential*
+*.key
+
+# Dataset roots / large outputs
+data_root/
+datasets/
+work_dirs/
+outputs/
+results/

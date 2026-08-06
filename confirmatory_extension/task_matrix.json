@@ -1,0 +1,62 @@
+{
+  "campaign_id": "vit3_loveda_posthoc_confirmatory_20260723",
+  "formal_training_runs": 6,
+  "legacy_root": "/data/Vit_Cube/vit3_36h_execution_20260718",
+  "p2_root": "/data/Vit_Cube/vit3_neurocomputing_p2_20260720",
+  "protocol": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/protocol/confirmatory_protocol.json",
+  "release_root": "/data/Vit_Cube/workspace/releases/20260723_loveda_confirmatory_r1/vit3_loveda_confirmatory_release",
+  "run_root": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723",
+  "schema": 1,
+  "serial_only": true,
+  "study_role": "post_hoc_confirmatory_extension",
+  "tasks": [
+    {
+      "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed53.json",
+      "eval": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed53_eval.json",
+      "id": "loveda_FFFF_seed53",
+      "method": "FFFF",
+      "output": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_FFFF_seed53",
+      "seed": 53
+    },
+    {
+      "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_GSHPS_AUTO_seed53.json",
+      "eval": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_GSHPS_AUTO_seed53_eval.json",
+      "id": "loveda_GSHPS_AUTO_seed53",
+      "method": "GSHPS_AUTO",
+      "output": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_GSHPS_AUTO_seed53",
+      "seed": 53
+    },
+    {
+      "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed53.json",
+      "eval": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed53_eval.json",
+      "id": "loveda_RAND_PATH_seed53",
+      "method": "RAND_PATH",
+      "output": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_RAND_PATH_seed53",
+      "seed": 53
+    },
+    {
+      "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed67.json",
+      "eval": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed67_eval.json",
+      "id": "loveda_RAND_PATH_seed67",
+      "method": "RAND_PATH",
+      "output": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_RAND_PATH_seed67",
+      "seed": 67
+    },
+    {
+      "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_GSHPS_AUTO_seed67.json",
+      "eval": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_GSHPS_AUTO_seed67_eval.json",
+      "id": "loveda_GSHPS_AUTO_seed67",
+      "method": "GSHPS_AUTO",
+      "output": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_GSHPS_AUTO_seed67",
+      "seed": 67
+    },
+    {
+      "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed67.json",
+      "eval": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed67_eval.json",
+      "id": "loveda_FFFF_seed67",
+      "method": "FFFF",
+      "output": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_FFFF_seed67",
+      "seed": 67
+    }
+  ]
+}

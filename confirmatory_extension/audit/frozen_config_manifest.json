@@ -1,0 +1,75 @@
+{
+  "created_at": "2026-07-23T01:57:43.427563+00:00",
+  "files": [
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/protocol/confirmatory_protocol.json",
+      "sha256": "924ad96319c65594fac39e877ef7d44eb2fe921ed5d52eb710248d9812cf5236"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/protocol/loveda_gshps_auto_mask.json",
+      "sha256": "da6f891a26867b085b916d93178523ab9d3ade8884f6aa0bde1b296e192239db"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/protocol/loveda_rand_path_seed53_mask.json",
+      "sha256": "314a18f017eca885c59c53551ef373cb3e4720826887d612f874441a9a2186f8"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/protocol/loveda_rand_path_seed67_mask.json",
+      "sha256": "ad5ab5a3dacf36967b2f8102d77a3bfa75d18184fd60b81367e6e06af2b5c9ba"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/task_matrix.json",
+      "sha256": "0d7278dea4ebc6313a6375a0e78fb3d8edb73393bd83a6c27a976ec1485b0df5"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed53.json",
+      "sha256": "6445fefc1458ee803a171c15f32fc60b80c2a53883493ea1427c4777daf669c4"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed53_eval.json",
+      "sha256": "4d659788b3c22b5239da267594d6a54003d4e956ab320e3f4e9a41c22b0e2bfc"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed67.json",
+      "sha256": "072bdf2fa8cc72da79a7e0ff90a281f1aa0cf44d05f503f430bdb61efb098480"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed67_eval.json",
+      "sha256": "f90c5ac4abf20b29c8043c06f714ed134549b6f092a6eca62f9c4ac602337a9b"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_GSHPS_AUTO_seed53.json",
+      "sha256": "542fefe47604aab3c9d21780db5fbbe2fb279d4a450da5eef88c712890adbf02"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_GSHPS_AUTO_seed53_eval.json",
+      "sha256": "fd64f30b703be04afd68629498475200ad2ce80abf9c53b6d905c176e1882599"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_GSHPS_AUTO_seed67.json",
+      "sha256": "7a84348dfa6e4b208032885010e01a22aaa0a3c74a2b85f3be3ca41b3721c674"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_GSHPS_AUTO_seed67_eval.json",
+      "sha256": "f46ca17b0cdb39555bf28483aac476cd56931ce693d9048278ef452f9d700ae6"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed53.json",
+      "sha256": "6616447142e6bf73d77f2dbb2e9316d1e3cfaaee6b5496c52b8c9c6eaf1cc0c1"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed53_eval.json",
+      "sha256": "292cc9967f8fbfe02d3744afbe43d940970b04401fb21034d7e289be84508ec6"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed67.json",
+      "sha256": "43cfc82d017003e3aebe098dbdf5f771ec9f5873f30a0cb392369593b2ce64d2"
+    },
+    {
+      "path": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_RAND_PATH_seed67_eval.json",
+      "sha256": "ecc89949d0b0fe67b9eb1334c5958a4509aa1e9d516ef229832d377ef5907a7a"
+    }
+  ],
+  "frozen_before_results": true,
+  "status": "PASS"
+}

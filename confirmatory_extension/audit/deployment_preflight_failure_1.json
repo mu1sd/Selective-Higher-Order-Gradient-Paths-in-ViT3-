@@ -1,0 +1,7 @@
+{
+  "status": "PRESERVED_IMPLEMENTATION_FAILURE",
+  "stage": "prepare_only_before_protocol_or_formal_results",
+  "reason": "module search path was not rooted at immutable extension release",
+  "scientific_contract_changed": false,
+  "formal_results_present": 0
+}

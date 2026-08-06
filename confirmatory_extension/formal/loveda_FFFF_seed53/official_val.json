@@ -1,0 +1,148 @@
+{
+  "checkpoint": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_FFFF_seed53/final.pth",
+  "checkpoint_sha256": "23ccccc555afa85204d4894eb95fd5a7d96fbffe172a8aad0e42949b627a3bf2",
+  "config": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/configs/loveda_FFFF_seed53_eval.json",
+  "metrics": {
+    "confusion_matrix_true_by_pred": [
+      [
+        478999825,
+        31669065,
+        5023272,
+        25044889,
+        23678854,
+        11708897,
+        39125880
+      ],
+      [
+        26046572,
+        94835266,
+        123238,
+        244031,
+        63377,
+        616833,
+        876474
+      ],
+      [
+        32706338,
+        998771,
+        42157584,
+        466091,
+        896451,
+        933000,
+        1432265
+      ],
+      [
+        29022032,
+        159349,
+        310081,
+        158949134,
+        1538457,
+        2861278,
+        6727485
+      ],
+      [
+        35212652,
+        161524,
+        199468,
+        1541630,
+        23471196,
+        476215,
+        13320448
+      ],
+      [
+        54857738,
+        341061,
+        291111,
+        1636153,
+        5278147,
+        50279882,
+        12931555
+      ],
+      [
+        128366050,
+        5174713,
+        1533737,
+        8380765,
+        7178146,
+        15562385,
+        320886906
+      ]
+    ],
+    "domain_miou": {
+      "Rural": 39.74922249816686,
+      "Urban": 52.637318461850704
+    },
+    "intersection": [
+      478999825.0,
+      94835266.0,
+      42157584.0,
+      158949134.0,
+      23471196.0,
+      50279882.0,
+      320886906.0
+    ],
+    "miou": 48.01083074810267,
+    "per_class_iou": [
+      51.98258764128568,
+      58.790592594244806,
+      48.4172536685895,
+      67.10073090381209,
+      20.767925480658523,
+      31.86824238213009,
+      57.14848256599798
+    ],
+    "present_class_count": 7,
+    "qualitative_private_manifest": "/data/Vit_Cube/vit3_loveda_confirmatory_20260723/formal/loveda_FFFF_seed53/qualitative_private/manifest.json",
+    "union": [
+      921462064.0,
+      161310274.0,
+      87071407.0,
+      236881375.0,
+      113016565.0,
+      157774255.0,
+      561496809.0
+    ]
+  },
+  "mode": "FFFF",
+  "official_val_index_sha256": "9473cc32c5fb01679c6c02c1bdf31e185c97d24a8c1cfe600f4a2e1ddbee89bc",
+  "official_val_post_frozen": true,
+  "seed": 53,
+  "source": {
+    "checkpoint": "/data/Vit_Cube/payload/vittt_t_upernet.pth",
+    "checkpoint_sha256": "92c44883341c6d6df75c3009fbc77d79729501fb5a002f86c71744cbc8aef5d7",
+    "compatible_key_count": 472,
+    "ignored_checkpoint_keys": 21,
+    "missing_head_or_rope_keys": [
+      "backbone.layers.0.blocks.0.attn.rope.rotations",
+      "backbone.layers.1.blocks.0.attn.rope.rotations",
+      "backbone.layers.1.blocks.1.attn.rope.rotations",
+      "backbone.layers.1.blocks.2.attn.rope.rotations",
+      "backbone.layers.2.blocks.0.attn.rope.rotations",
+      "backbone.layers.2.blocks.1.attn.rope.rotations",
+      "backbone.layers.2.blocks.2.attn.rope.rotations",
+      "backbone.layers.2.blocks.3.attn.rope.rotations",
+      "backbone.layers.2.blocks.4.attn.rope.rotations",
+      "backbone.layers.2.blocks.5.attn.rope.rotations",
+      "backbone.layers.2.blocks.6.attn.rope.rotations",
+      "backbone.layers.2.blocks.7.attn.rope.rotations",
+      "backbone.layers.2.blocks.8.attn.rope.rotations",
+      "backbone.layers.3.blocks.0.attn.rope.rotations",
+      "backbone.layers.3.blocks.1.attn.rope.rotations",
+      "backbone.layers.3.blocks.2.attn.rope.rotations",
+      "backbone.layers.3.blocks.3.attn.rope.rotations",
+      "decode_head.conv_seg.weight",
+      "decode_head.conv_seg.bias",
+      "auxiliary_head.conv_seg.weight",
+      "auxiliary_head.conv_seg.bias"
+    ],
+    "mmseg_commit": "c685fe6767c4cadf6b051983ca6208f1b9d1ccb8",
+    "mmseg_root": "/data/Vit_Cube/workspace/releases/20260723_loveda_confirmatory_r1/vit3_loveda_confirmatory_release/private_mmseg",
+    "official_commit": "e3477587d099e6b9e83e9e7c80b1b999e0989a20",
+    "path_mask": null,
+    "runtime_initial_mode": "FFFF",
+    "ttt_block_count": 17,
+    "upstream_scale_state_fix": "forward mutation removed; fixed at upstream long-run value 1/3",
+    "use_checkpoint": false
+  },
+  "status": "PASS"
+}
