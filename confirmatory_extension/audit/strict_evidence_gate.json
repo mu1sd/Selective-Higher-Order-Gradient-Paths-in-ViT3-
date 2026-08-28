@@ -1,0 +1,11 @@
+{
+  "combined_metric_rows_expected": 15,
+  "combined_metric_rows_observed": 15,
+  "failed_contracts": [],
+  "formal_runs_expected": 6,
+  "formal_runs_pass": 6,
+  "outcome_independent_gate": true,
+  "status": "PASS",
+  "study_role": "post_hoc_confirmatory_extension",
+  "time": "2026-07-23T08:22:24.467293+00:00"
+}

@@ -1,0 +1,84 @@
+{
+  "version": "1",
+  "campaign_id": "vit3_4090_external_validation_TO_BE_TIMESTAMPED",
+  "execution_mode": "BUILD_ONLY",
+  "authorized_root": "TO_BE_FILLED_BY_USER",
+  "run_root": "TO_BE_FILLED_BY_USER/vit3_4090_external_validation_TO_BE_TIMESTAMPED",
+  "release_root": "TO_BE_FILLED_BY_USER/workspace/vit3_external_validation_release",
+  "deadline_beijing": "TO_BE_FILLED_BY_USER",
+  "finalization_buffer_minutes": 60,
+  "max_authorized_gpu_hours": 0,
+  "authorized_stages": [],
+  "auto_continue_within_cap": false,
+  "variables": {
+    "python_bin": "TO_BE_FILLED_BY_USER/envs/vit3/bin/python",
+    "official_root": "TO_BE_FILLED_BY_USER/workspace/vit3_external_validation_release/source/ViTTT",
+    "mmseg_root": "TO_BE_FILLED_BY_USER/workspace/mmsegmentation-1.2.2",
+    "classification_checkpoint": "TO_BE_FILLED_BY_USER/payload/H-ViTTT-T-mesa.pth",
+    "segmentation_checkpoint": "TO_BE_FILLED_BY_USER/payload/vittt_t_upernet.pth",
+    "precision": "fp16",
+    "fixed_loss_scale": "512",
+    "authorized_precision_fallback": "none",
+    "handoff_root": "TO_BE_FILLED_BY_USER/handoff",
+    "imagenet_root": "TO_BE_FILLED_BY_USER",
+    "loveda_root": "TO_BE_FILLED_BY_USER"
+  },
+  "stages": [
+    {
+      "id": "P0_STATIC_TESTS",
+      "requires": [],
+      "consumes_gpu": false,
+      "command": ["{python_bin}", "-m", "unittest", "discover", "-s", "{release_root}/tests", "-p", "test_*.py", "-v"]
+    },
+    {
+      "id": "P0_HANDOFF_AUDIT",
+      "requires": ["P0_STATIC_TESTS"],
+      "consumes_gpu": false,
+      "command": ["{python_bin}", "-m", "audit.handoff", "--handoff", "{handoff_root}", "--official-root", "{official_root}", "--classification-checkpoint", "{classification_checkpoint}", "--segmentation-checkpoint", "{segmentation_checkpoint}", "--output-root", "{run_root}", "--imagenet-root", "{imagenet_root}", "--loveda-root", "{loveda_root}", "--execution-mode", "BUILD_ONLY"]
+    },
+    {
+      "id": "A0_CLASSIFICATION_SMOKE",
+      "requires": ["P0_HANDOFF_AUDIT"],
+      "consumes_gpu": true,
+      "estimated_gpu_hours": 0.5,
+      "command": ["{python_bin}", "{release_root}/smoke/classification_official_smoke.py", "--official-vittt-root", "{official_root}", "--output", "{run_root}/smoke/classification_smoke.json", "--device", "cuda", "--steps", "20", "--batch-size", "1", "--image-size", "224", "--model-factory", "h_vittt_tiny", "--checkpoint", "{classification_checkpoint}", "--precision", "{precision}", "--loss-scale", "{fixed_loss_scale}"],
+      "gate": {"path": "{run_root}/smoke/classification_smoke.json", "key": "status", "pass_values": ["PASS"]}
+    },
+    {
+      "id": "A0_SEGMENTATION_SMOKE",
+      "requires": ["A0_CLASSIFICATION_SMOKE"],
+      "consumes_gpu": true,
+      "estimated_gpu_hours": 0.75,
+      "env": {"PYTHONPATH": "{mmseg_root}:{release_root}", "CUBLAS_WORKSPACE_CONFIG": ":4096:8"},
+      "command": ["{python_bin}", "{release_root}/smoke/segmentation_official_smoke.py", "--mmseg-root", "{mmseg_root}", "--output", "{run_root}/smoke/segmentation_smoke.json", "--device", "cuda", "--steps", "20", "--batch-size", "1", "--image-size", "64", "--checkpoint", "{segmentation_checkpoint}", "--precision", "{precision}", "--loss-scale", "{fixed_loss_scale}"],
+      "gate": {"path": "{run_root}/smoke/segmentation_smoke.json", "key": "status", "pass_values": ["PASS"]}
+    },
+    {
+      "id": "A0_PRECISION_PATH_AUDIT",
+      "requires": ["A0_SEGMENTATION_SMOKE"],
+      "consumes_gpu": true,
+      "estimated_gpu_hours": 0.25,
+      "env": {"PYTHONPATH": "{mmseg_root}:{release_root}", "CUBLAS_WORKSPACE_CONFIG": ":4096:8"},
+      "command": ["{python_bin}", "{release_root}/smoke/classification_precision_path_audit.py", "--official-root", "{official_root}", "--checkpoint", "{classification_checkpoint}", "--output", "{run_root}/smoke/classification_precision_path_audit.json", "--authorize-fallback", "{authorized_precision_fallback}", "--configured-precision", "{precision}", "--configured-loss-scale", "{fixed_loss_scale}"],
+      "gate": {"path": "{run_root}/smoke/classification_precision_path_audit.json", "key": "configured_protocol_valid", "pass_values": [true]}
+    },
+    {
+      "id": "A0_SEGMENTATION_PRECISION_PATH_AUDIT",
+      "requires": ["A0_PRECISION_PATH_AUDIT"],
+      "consumes_gpu": true,
+      "estimated_gpu_hours": 0.25,
+      "env": {"PYTHONPATH": "{mmseg_root}:{release_root}", "CUBLAS_WORKSPACE_CONFIG": ":4096:8"},
+      "command": ["{python_bin}", "{release_root}/smoke/segmentation_precision_path_audit.py", "--mmseg-root", "{mmseg_root}", "--checkpoint", "{segmentation_checkpoint}", "--output", "{run_root}/smoke/segmentation_precision_path_audit.json", "--authorize-fallback", "{authorized_precision_fallback}", "--configured-precision", "{precision}", "--configured-loss-scale", "{fixed_loss_scale}"],
+      "gate": {"path": "{run_root}/smoke/segmentation_precision_path_audit.json", "key": "configured_protocol_valid", "pass_values": [true]}
+    },
+    {
+      "id": "A1_CLASSIFICATION_PROFILE",
+      "requires": ["A0_SEGMENTATION_PRECISION_PATH_AUDIT"],
+      "consumes_gpu": true,
+      "estimated_gpu_hours": 2.0,
+      "command": ["{python_bin}", "-m", "benchmarks.classification_profile", "--official-root", "{official_root}", "--checkpoint", "{classification_checkpoint}", "--output", "{run_root}/calibration/classification_profile.json", "--batch-candidates", "8,16,32,64", "--warmup-steps", "100", "--measured-steps", "300", "--repeats", "3", "--precision", "{precision}", "--loss-scale", "{fixed_loss_scale}"],
+      "gate": {"path": "{run_root}/calibration/classification_profile.json", "key": "status", "pass_values": ["PASS"]},
+      "pause_after": true
+    }
+  ]
+}

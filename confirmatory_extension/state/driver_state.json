@@ -1,0 +1,26 @@
+{
+  "campaign_id": "vit3_loveda_posthoc_confirmatory_20260723",
+  "current": "postprocess",
+  "health": {
+    "disk_available_gb": 18.89380645751953,
+    "gpu_temperature_c": 45,
+    "gpu_used_mb": 15,
+    "gpu_utilization_pct": 0,
+    "host_available_gb": 14.5147705078125,
+    "status": "PASS",
+    "time": "2026-07-23T08:22:23.828973+00:00"
+  },
+  "heartbeat": "2026-07-23T08:22:23.829258+00:00",
+  "serial_only": true,
+  "started_at": "2026-07-23T01:57:44.459315+00:00",
+  "status": "POSTPROCESS_RUNNING",
+  "study_role": "post_hoc_confirmatory_extension",
+  "tasks": {
+    "loveda_FFFF_seed53": "PASS",
+    "loveda_FFFF_seed67": "PASS",
+    "loveda_GSHPS_AUTO_seed53": "PASS",
+    "loveda_GSHPS_AUTO_seed67": "PASS",
+    "loveda_RAND_PATH_seed53": "PASS",
+    "loveda_RAND_PATH_seed67": "PASS"
+  }
+}

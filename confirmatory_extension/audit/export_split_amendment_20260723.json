@@ -1,0 +1,12 @@
+{
+  "created_at": "2026-07-23T02:36:41.761211+00:00",
+  "datasets_included": false,
+  "delta_archive_scope": "all six confirmatory final checkpoints plus confirmatory evidence and n=5 statistics",
+  "delta_exporter_sha256": "931e6c933db597b358473247ec3cb8c3bd6c4d63da44cec3b4a791f199c4432c",
+  "prior_archive_scope": "Core/P2.1 code, evidence, paper material, initial weights, six seed11 representative checkpoints",
+  "prior_exporter_sha256": "de8f02d6c04513ce0ca960dcc6ce150736d2784f6a897e4c8754637f6c558869",
+  "reason": "user-requested risk reduction: export completed prior evidence now and confirmatory delta after completion",
+  "result_selection_changed": false,
+  "scientific_contract_changed": false,
+  "status": "PASS"
+}
