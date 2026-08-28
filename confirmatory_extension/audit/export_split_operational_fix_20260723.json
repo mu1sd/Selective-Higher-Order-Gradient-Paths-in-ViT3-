@@ -1,9 +1,0 @@
-{
-  "delta_service_sha256": "0c642c9851a9f12c15f55865f295f2032d5fb1bd89b5d40ab60d881bc779129c",
-  "failure_preserved": "systemd opened append target before ExecStartPre created it",
-  "fix": "use journal output for both export services",
-  "prior_service_sha256": "28669a498d334e2dde13409637f739b84c3827d1bbca3b3b5989c0d33170eeac",
-  "scientific_contract_changed": false,
-  "status": "PASS",
-  "time": "2026-07-23T02:38:27.055712+00:00"
-}

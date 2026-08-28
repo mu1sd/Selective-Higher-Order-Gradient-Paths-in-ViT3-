@@ -1,9 +1,0 @@
-{
-  "disk_available_gb": 18.89380645751953,
-  "gpu_temperature_c": 45,
-  "gpu_used_mb": 15,
-  "gpu_utilization_pct": 0,
-  "host_available_gb": 14.5147705078125,
-  "status": "PASS",
-  "time": "2026-07-23T08:22:23.828973+00:00"
-}
